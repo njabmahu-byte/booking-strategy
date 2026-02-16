@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com Social Media Strategy 2026 | Njabulo Mahumane</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        
+        /* ===== COLOR SYSTEM ===== */
+        :root {
+            /* Primary gradient system */
+            --deep-navy: #003580;
+            --vibrant-cobalt: #0071c2;
+            --soft-sky: #E6F0FA;
+            
+            /* Warm accents */
+            --sunset-orange: #FF6B35;
+            --golden-hour: #FDB913;
+            
+            /* Neutral scale */
+            --white: #FFFFFF;
+            --gray-100: #F9FAFC;
+            --gray-200: #F5F5F5;
+            --gray-300: #E5E7EB;
+            --gray-400: #D1D5DB;
+            --gray-500: #9CA3AF;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gray-800: #1F293A;
+            --gray-900: #1E293B;
+            
+            /* Semantic */
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            
+            /* Spacing */
+            --space-1: 8px;
+            --space-2: 16px;
+            --space-3: 24px;
+            --space-4: 32px;
+            --space-5: 48px;
+            --space-6: 64px;
+            --space-7: 80px;
+            
+            /* Shadows */
+            --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1);
+            
+            /* Border radius */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+        
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: var(--space-3);
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: var(--space-2);
+            color: var(--deep-navy);
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--deep-navy), var(--vibrant-cobalt));
+            margin-top: var(--space-1);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin-bottom: var(--space-2);
+        }
+        
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+        }
+        
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-3);
+        }
+        
+        section {
+            margin-bottom: var(--space-7);
+            scroll-margin-top: var(--space-5);
+        }
+        
+        /* ===== COVER PAGE ===== */
+        .cover {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--vibrant-cobalt) 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: var(--space-6);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80') center/cover;
+            opacity: 0.2;
+            mix-blend-mode: overlay;
+        }
+        
+        .cover-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: var(--space-4);
+            animation: fadeUp 1s ease-out;
+        }
+        
+        .cover h1 {
+            font-size: 64px;
+            margin-bottom: var(--space-2);
+            color: white;
+        }
+        
+        .cover h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: var(--space-4);
+        }
+        
+        .cover h2:after {
+            display: none;
+        }
+        
+        .cover-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            color: rgba(255,255,255,0.8);
+            margin-top: var(--space-4);
+            letter-spacing: 0.05em;
+        }
+        
+        /* ===== CARDS & COMPONENTS ===== */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-3);
+            margin: var(--space-3) 0;
+        }
+        
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-3);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-md);
+            border-color: var(--deep-navy);
+        }
+        
+        .glass-card {
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .stat-card {
+            background: var(--gray-100);
+            border-left: 4px solid var(--deep-navy);
+        }
+        
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--deep-navy);
+            line-height: 1.2;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* ===== TABLES ===== */
+        .table-container {
+            overflow-x: auto;
+            margin: var(--space-3) 0;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--gray-200);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        th {
+            background: var(--soft-sky);
+            color: var(--deep-navy);
+            font-weight: 600;
+            text-align: left;
+            padding: var(--space-2);
+            white-space: nowrap;
+        }
+        
+        td {
+            padding: var(--space-2);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover td {
+            background: var(--gray-100);
+        }
+        
+        /* ===== PROGRESS BARS ===== */
+        .progress-container {
+            margin: var(--space-2) 0;
+        }
+        
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: var(--gray-200);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--deep-navy), var(--vibrant-cobalt));
+            width: 0%;
+            transition: width 0.8s ease-out;
+        }
+        
+        /* ===== COLOR SWATCHES ===== */
+        .color-palette {
+            display: flex;
+            gap: var(--space-2);
+            flex-wrap: wrap;
+            margin: var(--space-3) 0;
+        }
+        
+        .swatch {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: var(--space-1);
+            color: white;
+            font-size: 11px;
+            font-family: 'JetBrains Mono', monospace;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .swatch.deep-navy { background: var(--deep-navy); }
+        .swatch.cobalt { background: var(--vibrant-cobalt); }
+        .swatch.soft-sky { background: var(--soft-sky); color: var(--gray-800); }
+        .swatch.sunset { background: var(--sunset-orange); }
+        .swatch.golden { background: var(--golden-hour); color: var(--gray-800); }
+        
+        /* ===== GRADIENT BARS ===== */
+        .gradient-bar {
+            height: 40px;
+            border-radius: var(--radius-sm);
+            margin: var(--space-3) 0;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(90deg, var(--deep-navy), var(--vibrant-cobalt), var(--soft-sky));
+        }
+        
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .fade-up {
+            animation: fadeUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .slide-in {
+            animation: slideIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .stagger > * {
+            opacity: 0;
+            animation: fadeUp 0.5s ease-out forwards;
+        }
+        
+        .stagger > *:nth-child(1) { animation-delay: 0.1s; }
+        .stagger > *:nth-child(2) { animation-delay: 0.2s; }
+        .stagger > *:nth-child(3) { animation-delay: 0.3s; }
+        .stagger > *:nth-child(4) { animation-delay: 0.4s; }
+        .stagger > *:nth-child(5) { animation-delay: 0.5s; }
+        .stagger > *:nth-child(6) { animation-delay: 0.6s; }
+        
+        /* ===== INTERACTIVE ELEMENTS ===== */
+        .btn {
+            display: inline-block;
+            padding: var(--space-2) var(--space-3);
+            background: var(--deep-navy);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #002b5c;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .tooltip-trigger {
+            border-bottom: 1px dashed var(--gray-500);
+            cursor: help;
+            position: relative;
+        }
+        
+        .tooltip-trigger:hover:after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gray-800);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+        
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            h2 { font-size: 28px; }
+            .cover h1 { font-size: 48px; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* ===== PRINT ===== */
+        @media print {
+            .cover { height: auto; background: white; color: black; }
+            .cover:before { display: none; }
+            .btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- COVER SECTION -->
+    <div class="cover">
+        <div class="cover-content">
+            <h1>BOOKING.COM</h1>
+            <h2>COMPREHENSIVE SOCIAL MEDIA STRATEGY 2026–2027</h2>
+            <div style="width: 100px; height: 4px; background: var(--golden-hour); margin: 32px auto;"></div>
+            <div class="cover-mono" style="font-family: 'JetBrains Mono', monospace; margin-top: 48px;">
+                Prepared by: Njabulo Mahumane<br>
+                Digital Marketing Strategist<br>
+                njabmahu@gmail.com<br>
+                February 2026
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- EXECUTIVE SUMMARY -->
+        <section id="executive-summary">
+            <h2>EXECUTIVE SUMMARY</h2>
+            <p style="font-size: 18px; margin-bottom: var(--space-3);">This comprehensive social media strategy positions Booking.com to capitalize on its market leadership while addressing the critical "Trust Paradox" identified in our brand analysis.</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); margin-bottom: var(--space-2);">THE TRUST PARADOX</h3>
+                    <p>Routine bookings perform well, but service recovery reveals gaps. Strong pre-booking, weak post-booking.</p>
+                    <div class="stat-number" style="font-size: 24px; margin-top: var(--space-2);">4.6★ vs 2.1★</div>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); margin-bottom: var(--space-2);">KEY OPPORTUNITY</h3>
+                    <p>61% of travelers book after Instagram discovery, 32% after TikTok. Platform evolution demands adaptation.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); margin-bottom: var(--space-2);">AI PERSONALIZATION</h3>
+                    <p>80% open to AI-designed itineraries; 94% in India. The "Era of You" demands hyper-personalized content.</p>
+                </div>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, var(--soft-sky), white); padding: var(--space-3); border-radius: var(--radius-lg); margin: var(--space-4) 0;">
+                <h3 style="margin-bottom: var(--space-2);">STRATEGIC OBJECTIVES</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: space-around;">
+                    <div style="text-align: center;">
+                        <div class="stat-number">+25%</div>
+                        <div class="stat-label">Engagement Rate</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-number">-40%</div>
+                        <div class="stat-label">Negative Sentiment</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="stat-number">+15%</div>
+                        <div class="stat-label">Direct Bookings</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARKETING STRATEGY & OBJECTIVES -->
+        <section id="strategy">
+            <h2>MARKETING STRATEGY & OBJECTIVES</h2>
+            
+            <h3>Strategic Objectives & Alignment</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Objective</th>
+                            <th>Target Metric</th>
+                            <th>Brand Alignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Strengthen Pre-Booking Engagement</strong></td>
+                            <td><span class="mono">+25% Engagement Rate</span></td>
+                            <td>"book whoever you want to be"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Address Service Recovery Gap</strong></td>
+                            <td><span class="mono">-40% Negative Sentiment</span></td>
+                            <td>Trust Paradox Resolution</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Drive Direct Platform Traffic</strong></td>
+                            <td><span class="mono">+15% Click-Through Rate</span></td>
+                            <td>Reduce OTA Dependency</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Build Trust Through Transparency</strong></td>
+                            <td><span class="mono">+20% Positive Sentiment</span></td>
+                            <td>Review System Transparency</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card" style="margin: var(--space-3) 0; background: var(--soft-sky);">
+                <h3 style="color: var(--deep-navy);">BRAND POSITIONING CONTEXT</h3>
+                <p>"book whoever you want to be" campaign featuring Tina Fey taps into identity exploration—64% of travelers feel 'main character energy' while on vacation.</p>
+            </div>
+            
+            <h3>Priority Audience Personas</h3>
+            <div class="card-grid">
+                <div class="card glass-card">
+                    <h4 style="color: var(--deep-navy);">THE IDENTITY EXPLORER</h4>
+                    <p><span class="mono">18-34</span> • TikTok, Instagram Reels</p>
+                    <p style="margin-top: var(--space-1);">Alter-ego stories, transformations</p>
+                    <p class="stat-label" style="margin-top: var(--space-2);">64% feel 'main character energy'</p>
+                </div>
+                <div class="card glass-card">
+                    <h4 style="color: var(--deep-navy);">THE DEAL-SEEKING FAMILY PLANNER</h4>
+                    <p><span class="mono">35-54</span> • Facebook, Instagram Feed</p>
+                    <p style="margin-top: var(--space-1);">Value content, loyalty programs</p>
+                    <p class="stat-label" style="margin-top: var(--space-2);">Price-sensitive, rewards-driven</p>
+                </div>
+                <div class="card glass-card">
+                    <h4 style="color: var(--deep-navy);">THE AI-CURIOUS TRAVELER</h4>
+                    <p><span class="mono">25-45</span> • YouTube, ChatGPT</p>
+                    <p style="margin-top: var(--space-1);">AI Trip Planner demos, personalization</p>
+                    <p class="stat-label" style="margin-top: var(--space-2);">80% open to AI-designed trips</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATFORM STRATEGY -->
+        <section id="platforms">
+            <h2>PLATFORM STRATEGY</h2>
+            
+            <h3>Platform Role Distribution</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Primary Role</th>
+                            <th>Content Mix</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Instagram</strong></td>
+                            <td>Inspiration + Research Hub</td>
+                            <td>40% Reels, 30% Carousels, 20% Static, 10% Stories</td>
+                            <td>5-7x/week</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TikTok</strong></td>
+                            <td>Discovery + Viral Reach</td>
+                            <td>90% short-form video, 10% trending</td>
+                            <td>3-5x/week</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Facebook</strong></td>
+                            <td>Loyalty + Community Building</td>
+                            <td>50% value, 30% community, 20% events</td>
+                            <td>3-4x/week</td>
+                        </tr>
+                        <tr>
+                            <td><strong>YouTube</strong></td>
+                            <td>Deep Dives + Trust Building</td>
+                            <td>Virtual tours, destination guides</td>
+                            <td>2x/month</td>
+                        </tr>
+                        <tr>
+                            <td><strong>X (Twitter)</strong></td>
+                            <td>Customer Service + Real-Time</td>
+                            <td>70% support, 20% personality, 10% promo</td>
+                            <td>Daily</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card" style="margin: var(--space-3) 0; border-left: 4px solid var(--sunset-orange);">
+                <h4 style="color: var(--deep-navy);">⚡ INSTAGRAM DEEP DIVE</h4>
+                <p><span class="stat-number" style="font-size: 32px;">61%</span> of travelers have booked after seeing it on Instagram</p>
+                <div style="margin-top: var(--space-2);">
+                    <p><strong>Key Features to Leverage:</strong> Link Stickers, Guides, Collaborations</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPETITOR & CONTENT ANALYSIS -->
+        <section id="analysis">
+            <h2>COMPETITOR & CONTENT ANALYSIS</h2>
+            
+            <h3>Competitive Landscape</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Competitor</th>
+                            <th>Positioning</th>
+                            <th>Strengths</th>
+                            <th>Weaknesses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Booking.com</strong></td>
+                            <td>Practical, approachable, irreverent</td>
+                            <td>Market leader, brand equity, AI innovation</td>
+                            <td>Service recovery perception</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Expedia</strong></td>
+                            <td>Comprehensive travel solutions</td>
+                            <td>Broad inventory, loyalty</td>
+                            <td>Fragmented portfolio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Airbnb</strong></td>
+                            <td>Experience-led, community-driven</td>
+                            <td>Emotional connection, UGC engine</td>
+                            <td>Perceived expensive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Content Gap Analysis</h3>
+            <div style="margin: var(--space-3) 0;">
+                <div class="progress-container">
+                    <div class="progress-label"><span>Service Recovery Content</span> <span>15% → 40%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 15%;"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>AI Tool Education</span> <span>10% → 30%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 10%;"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>User-Generated Content</span> <span>20% → 35%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 20%;"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>Localized Content</span> <span>5% → 25%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 5%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL DESIGN SYSTEM -->
+        <section id="visual">
+            <h2>VISUAL DESIGN SYSTEM</h2>
+            
+            <h3>Color Palette</h3>
+            <div class="color-palette">
+                <div class="swatch deep-navy">#003580<br>Deep Navy</div>
+                <div class="swatch cobalt">#0071c2<br>Cobalt</div>
+                <div class="swatch soft-sky">#E6F0FA<br>Soft Sky</div>
+                <div class="swatch sunset">#FF6B35<br>Sunset</div>
+                <div class="swatch golden">#FDB913<br>Golden</div>
+            </div>
+            
+            <div class="gradient-bar primary-gradient"></div>
+            
+            <h3>Typography System</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                <div class="card">
+                    <h4 style="font-size: 48px; font-weight: 700;">Display</h4>
+                    <p style="font-family: 'Inter', sans-serif; font-size: 16px;">Inter / Sohne – Headlines 72/48/32pt</p>
+                    <p style="font-family: 'JetBrains Mono', monospace; font-size: 14px; margin-top: var(--space-2);">Monospace: JetBrains Mono – Data, metrics</p>
+                </div>
+                <div class="card">
+                    <h4 style="font-weight: 400;">Body Regular 16pt</h4>
+                    <h4 style="font-weight: 500;">Body Medium 16pt</h4>
+                    <h4 style="font-weight: 600;">Body Semi-Bold 16pt</h4>
+                    <p style="font-size: 14px; color: var(--gray-600);">Caption 14pt • Small 12pt</p>
+                </div>
+            </div>
+            
+            <h3>Micro-Interaction Framework</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>Hover States</h4>
+                    <p>Scale 1.0 → 1.05 • Shadow: 0 4px → 0 12px • 200-300ms</p>
+                    <button class="btn" style="margin-top: var(--space-2);">Hover Me</button>
+                </div>
+                <div class="card">
+                    <h4>Loading States</h4>
+                    <p>Logo transforms into travel icons: plane draws flight path, key turns, suitcase opens</p>
+                </div>
+                <div class="card">
+                    <h4>Scroll-Triggered</h4>
+                    <p>Parallax (bg 0.5x) • Staggered fade (50ms offset) • Counters animate from 0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENT PILLARS -->
+        <section id="pillars">
+            <h2>CONTENT PILLARS</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 1: IDENTITY EXPLORER</h3>
+                    <p>"Book whoever you want to be" – transformations, alter-ego stories, Tina Fey collaborations</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 2: PROPERTY SHOWCASES</h3>
+                    <p>Room tours, hidden gems, amenities, seasonal decor</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 3: GUEST EXPERIENCES</h3>
+                    <p>UGC reposts, testimonials, celebration moments</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 4: LOCAL GUIDES</h3>
+                    <p>Restaurant recs, hidden gems, seasonal itineraries</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 5: BEHIND-THE-SCENES</h3>
+                    <p>AI Trip Planner demos, customer service spotlights, review system transparency</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--deep-navy); font-size: 20px;">PILLAR 6: SEASONAL EVENTS</h3>
+                    <p>Wedding showcases, holiday packages, last-minute deals</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MONTHLY CONTENT CADENCE -->
+        <section id="calendar">
+            <h2>MONTHLY CONTENT CADENCE</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Week 1</strong></td>
+                            <td>Property Showcase (Reel)</td>
+                            <td>Local Guide (Carousel)</td>
+                            <td>UGC Repost (Static)</td>
+                            <td>Behind-Scenes (Reel)</td>
+                            <td>Campaign</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 2</strong></td>
+                            <td>AI Tool Demo (Reel)</td>
+                            <td>Guest Feature (Carousel)</td>
+                            <td>Seasonal (Static)</td>
+                            <td>Property Showcase (Reel)</td>
+                            <td>Local Guide</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 3</strong></td>
+                            <td>Behind-Scenes (Reel)</td>
+                            <td>UGC Repost (Static)</td>
+                            <td>AI Tool Demo (Reel)</td>
+                            <td>Property Showcase (Carousel)</td>
+                            <td>Campaign</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week 4</strong></td>
+                            <td>Local Guide (Reel)</td>
+                            <td>Guest Feature (Static)</td>
+                            <td>Seasonal (Carousel)</td>
+                            <td>Behind-Scenes (Reel)</td>
+                            <td>UGC Roundup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p style="margin-top: var(--space-2);"><strong>Weekend:</strong> Destination Inspiration / User Challenge Theme</p>
+        </section>
+
+        <!-- COMMUNITY MANAGEMENT -->
+        <section id="community">
+            <h2>COMMUNITY MANAGEMENT</h2>
+            
+            <h3>Response Time Standards</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Response Time Goal</th>
+                            <th>Escalation Path</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>X (Twitter)</td>
+                            <td>&lt;30 min (business) / &lt;2 hrs (after)</td>
+                            <td>Direct to support</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>&lt;2 hrs</td>
+                            <td>Messenger for sensitive</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>&lt;4 hrs</td>
+                            <td>DMs for resolution</td>
+                        </tr>
+                        <tr>
+                            <td>TikTok</td>
+                            <td>&lt;6 hrs</td>
+                            <td>Comments → DMs if complex</td>
+                        </tr>
+                        <tr>
+                            <td>YouTube</td>
+                            <td>&lt;24 hrs</td>
+                            <td>Public response</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="card" style="margin: var(--space-3) 0;">
+                <h4>GOLDEN RULE</h4>
+                <p style="font-size: 18px; font-weight: 500;">Never argue publicly. Always move to DM.</p>
+            </div>
+        </section>
+
+        <!-- KPI DASHBOARD -->
+        <section id="kpis">
+            <h2>KEY PERFORMANCE INDICATORS</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Primary KPIs</th>
+                            <th>Secondary</th>
+                            <th>Current Benchmark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Instagram</td>
+                            <td>Engagement Rate, Reach</td>
+                            <td>Follower Growth, Saves</td>
+                            <td>ER: 1.8%, CTR: 1.2%</td>
+                        </tr>
+                        <tr>
+                            <td>TikTok</td>
+                            <td>Views, Engagement Rate</td>
+                            <td>Follower Growth, Shares</td>
+                            <td>Views: 150K, ER: 4.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>Engagement, Video Views</td>
+                            <td>Page Likes, Event Responses</td>
+                            <td>ER: 0.6%, CTR: 0.8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Trust Metrics Dashboard</h3>
+            <div style="margin: var(--space-3) 0;">
+                <div class="progress-container">
+                    <div class="progress-label"><span>Positive Comment Ratio</span> <span>72% → 80%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 72%;"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>Service Complaints</span> <span>15% → &lt;8%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 15%; background: var(--warning);"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>Response Rate to Complaints</span> <span>65% → 95%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-label"><span>Trustpilot Score</span> <span>2.1 → 2.5+</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 42%; background: var(--golden-hour);"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPLEMENTATION ROADMAP -->
+        <section id="roadmap">
+            <h2>90-DAY IMPLEMENTATION ROADMAP</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3);">
+                <div class="card" style="border-top: 4px solid var(--deep-navy);">
+                    <h3 style="color: var(--deep-navy);">MONTH 1: FOUNDATION</h3>
+                    <ul style="margin-left: var(--space-3);">
+                        <li>Week 1: Team and Tools</li>
+                        <li>Week 2: Content Audit</li>
+                        <li>Week 3: Template Development</li>
+                        <li>Week 4: Pilot Launch (IG + TikTok)</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--vibrant-cobalt);">
+                    <h3 style="color: var(--vibrant-cobalt);">MONTH 2: OPTIMIZATION</h3>
+                    <ul style="margin-left: var(--space-3);">
+                        <li>Week 5: Platform Expansion</li>
+                        <li>Week 6: Community Protocol</li>
+                        <li>Week 7: Content Pillar Rollout</li>
+                        <li>Week 8: Performance Review</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--sunset-orange);">
+                    <h3 style="color: var(--sunset-orange);">MONTH 3: SCALE</h3>
+                    <ul style="margin-left: var(--space-3);">
+                        <li>Week 9: Influencer Program</li>
+                        <li>Week 10: UGC Campaign</li>
+                        <li>Week 11: AI Content Series</li>
+                        <li>Week 12: Quarterly Review</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS MEASURES -->
+        <section id="success">
+            <h2>SUCCESS MEASURES AT 12 MONTHS</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3);">
+                <div class="card stat-card">
+                    <div class="stat-number">+25%</div>
+                    <div class="stat-label">Engagement Growth</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-number">2.1→2.5+</div>
+                    <div class="stat-label">Trustpilot Score</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-number">+20%</div>
+                    <div class="stat-label">Positive Sentiment</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-number">+15%</div>
+                    <div class="stat-label">Direct Bookings</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-number">1.8M→3M</div>
+                    <div class="stat-label">TikTok Followers</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="stat-number">65%→95%</div>
+                    <div class="stat-label">Response Rate</div>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top: var(--space-4); background: linear-gradient(135deg, var(--deep-navy), var(--vibrant-cobalt)); color: white; text-align: center;">
+                <p style="font-size: 24px; font-weight: 300; margin-bottom: var(--space-2);">"This strategy transforms Booking.com's social presence from a broadcast channel into a relationship-building engine that addresses critical trust gaps while leveraging AI innovation and the emotional power of the 'Booking.yeah' moment."</p>
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT -->
+        <footer style="text-align: center; padding: var(--space-5) 0; border-top: 1px solid var(--gray-300); margin-top: var(--space-6);">
+            <h3 style="font-size: 24px; margin-bottom: var(--space-2);">Njabulo Mahumane</h3>
+            <p style="font-family: 'JetBrains Mono', monospace; color: var(--gray-600);">Digital Marketing Strategist</p>
+            <p style="margin: var(--space-2) 0;">njabmahu@gmail.com</p>
+            <p style="color: var(--gray-500); font-size: 14px;">February 2026</p>
+        </footer>
+    </div>
+
+    <!-- Scroll animation script -->
+    <script>
+        // Simple scroll-triggered animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            // Animate progress bars when they come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bars = entry.target.querySelectorAll('.progress-fill');
+                        bars.forEach(bar => {
+                            const width = bar.style.width;
+                            bar.style.width = '0%';
+                            setTimeout(() => {
+                                bar.style.width = width;
+                            }, 100);
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            document.querySelectorAll('.progress-container').forEach(container => {
+                observer.observe(container);
+            });
+            
+            // Add fade-up animation to cards as they appear
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-up');
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            document.querySelectorAll('.card').forEach(card => {
+                cardObserver.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
